@@ -1,84 +1,80 @@
-# Análisis de Planes de Telefonía - Megaline
+# 📞 Análisis de Planes de Telefonía - Megaline
 
-## 📊 Descripción del Proyecto
+## 📊 Descripción General
 
-Este proyecto tiene como objetivo comprender en profundidad el comportamiento de los usuarios en relación con los consumos asociados a los planes de telefonía **"Surf"** y **"Ultimate"**, ofrecidos por la compañía Megaline. El propósito final es identificar cuál de estos planes contribuye de manera más significativa a los ingresos de la empresa y, por lo tanto, cuál debería recibir mayor enfoque presupuestal en publicidad.
+Este proyecto tiene como objetivo analizar el comportamiento de los usuarios con respecto al consumo de servicios bajo los planes tarifarios **"Surf"** y **"Ultimate"** ofrecidos por Megaline. El fin principal es identificar cuál de estos planes aporta mayores ingresos a la empresa y, por ende, cuál debería ser priorizado en futuras estrategias de marketing y asignación presupuestal.
 
-La muestra de datos contiene información de 500 clientes: nombre, ubicación, plan de prepago, cantidad de llamadas, mensajes de texto y datos móviles utilizados durante el año 2018.
+Se parte de una muestra de **500 clientes**, con datos sobre nombre, ubicación, plan contratado, consumo de minutos, mensajes de texto y datos móviles a lo largo del año **2018**.
 
 ---
 
-## 🧠 Objetivo
+## 🎯 Objetivo
 
-Analizar el comportamiento de los clientes y determinar, a través de visualizaciones, métricas descriptivas y pruebas estadísticas, qué plan genera más ingresos para la empresa.
+Determinar, a través de análisis descriptivo, visualizaciones y pruebas estadísticas, qué plan genera mayores ingresos para Megaline y proporciona mayor rentabilidad.
 
 ---
 
 ## 🔍 Enfoque Metodológico
 
-1. **Preparación de los Datos**
-   - Limpieza de valores faltantes y duplicados.
-   - Conversión de tipos de datos cuando fue necesario.
-   - Validación de la integridad y consistencia del conjunto de datos.
+1. **Preparación de Datos**
+   - Limpieza de valores nulos y duplicados.
+   - Conversión de tipos de datos.
+   - Validación de la coherencia en los registros.
 
-2. **Transformación de Datos**
-   - Cálculo mensual de consumo individual por cliente.
-   - Agrupación de usuarios según su tipo de plan.
-   - Consolidación de los datos más relevantes en un solo DataFrame para análisis global.
+2. **Transformación**
+   - Cálculo mensual de consumo por cliente.
+   - Clasificación de usuarios por tipo de plan.
+   - Consolidación de métricas relevantes para el análisis comparativo.
 
 3. **Análisis Exploratorio**
-   - Análisis descriptivo de minutos, mensajes y datos móviles consumidos.
-   - Comparación de ingresos generados por cada plan.
-   - Visualización de los patrones de consumo.
+   - Estudio de distribución y tendencias de consumo (llamadas, SMS, datos).
+   - Estimación de ingresos individuales y totales por plan.
+   - Visualización de patrones mensuales.
 
 4. **Pruebas de Hipótesis**
-   - Comparación de ingresos promedio entre los planes Surf y Ultimate.
-   - Comparación de ingresos entre regiones, especialmente el área NY-NJ frente al resto del país.
+   - Comparación de ingresos promedio entre planes.
+   - Evaluación de diferencias regionales (área NY-NJ vs. resto del país).
 
 ---
 
-## 🧾 Resultados y Conclusiones
+## 📈 Resultados Clave
 
-### 🔹 Comparación de Consumo
-- Ambos planes presentan patrones similares de consumo mensual, con tendencia creciente.
-- El plan **Surf** tiene un ingreso promedio menor por usuario ($51) comparado con el **Ultimate** ($70), pero el **doble de usuarios**.
+### Consumo y Rentabilidad
+- El plan **Ultimate** tiene un mayor ingreso promedio por usuario (**$70**) en comparación con **Surf** (**$51**).
+- Sin embargo, **Surf cuenta con el doble de usuarios**, lo que compensa su menor ARPU (Average Revenue Per User).
 
-### 🔹 Ingresos por Excedentes
-- El 25% de los usuarios del plan Surf superan los minutos incluidos, generando ingresos adicionales.
-- El plan Ultimate rara vez presenta cargos por excedente, ya que incluye muchos beneficios.
+### Ingresos por Excedentes
+- Aproximadamente el **25%** de los usuarios del plan Surf exceden sus límites mensuales, generando cargos adicionales.
+- El plan Ultimate rara vez genera ingresos extra debido a sus beneficios ilimitados.
 
-### 🔹 Rentabilidad del Plan Surf
-- A pesar del menor ingreso promedio, Surf resulta **más rentable** gracias a su base de usuarios más amplia y cargos por excedente.
+### Popularidad y Comportamiento del Cliente
+- Surf parece ser más popular, posiblemente por su percepción de menor costo, aunque esta hipótesis no puede confirmarse con los datos actuales.
 
-### 🔹 Preferencias del Usuario
-- La popularidad del plan Surf podría estar relacionada con una percepción de menor costo, aunque esto no se puede confirmar con los datos actuales.
-
-### 🔹 Prueba de Hipótesis
-- Se **rechazó** la hipótesis nula de igualdad de ingresos promedio entre planes: existen diferencias significativas.
-- Se **rechazó** la hipótesis nula de igualdad de ingresos promedio entre NY-NJ y otras regiones: hay diferencias significativas.
+### Pruebas de Hipótesis
+- Se **rechaza** la hipótesis nula de igualdad de ingresos promedio entre los planes: existen diferencias significativas.
+- También se **rechaza** la hipótesis nula entre regiones (NY-NJ vs. otras): se encontraron diferencias estadísticamente significativas.
 
 ---
 
-## ✅ Conclusión Final
+## ✅ Conclusión
 
-El plan **Surf**, con su mayor base de usuarios y posibilidad de generar ingresos por cargos adicionales, es el **más rentable para Megaline**. Este análisis proporciona información valiosa para la toma de decisiones estratégicas y ajustes en el presupuesto de marketing.
+El plan **Surf** representa la **opción más rentable** para Megaline gracias a su mayor base de usuarios y la posibilidad de generar ingresos por cargos adicionales. Este análisis permite optimizar decisiones relacionadas con campañas publicitarias, precios y desarrollo de nuevos productos.
 
 ---
 
-## 🛠️ Herramientas Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 - Python
-- Pandas
-- NumPy
-- Matplotlib / Seaborn
-- SciPy (para pruebas estadísticas)
+- Pandas & NumPy
+- Matplotlib & Seaborn
+- SciPy (pruebas estadísticas)
 - Jupyter Notebook
 
 ---
 
-## 📫 Contacto
+## 👤 Autor
 
-César Eduardo Cruz Cabrera  
+**César Eduardo Cruz Cabrera**  
 📧 cesareduardocruzcabrera@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/cesar-eduardo-cruz-cabrera)
+🔗 [LinkedIn - César Eduardo Cruz Cabrera](https://www.linkedin.com/in/cesar-eduardo-cruz-cabrera)
 
